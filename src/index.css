@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Login-color{
+    background-color: #43766C
+}
+.img :nth-child(1){
+    animation-name: anime;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.img :nth-child(2){
+    animation-name: anime;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.img :nth-child(3){
+    animation-name: anime;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.img :nth-child(4){
+    animation-name: anime;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    rotate: -30deg;
+}
+.img :nth-child(5){
+    animation-name: anime;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    rotate: -30deg;
+}
+@keyframes anime {
+    50%{
+        transform: translate(0,5%);
+    }
+
+}
