@@ -36,32 +36,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route path="/Registration" element={<Registration />}></Route>
-          <Route
-            path="/Product"
-            element={<Product addToCart={addToCart} />}
-          ></Route>
-          <Route
-            path="/Home"
-            element={<Home cart={cart} setCart={setCart} />}
-          />
+          <Route path="/Product" element={<Product addToCart={addToCart} />}></Route>
+          <Route path="/Home" element={<Home cart={cart} setCart={setCart} />}  />
           <Route path="/ContactUs" element={<ContactUs />}></Route>
           <Route path="/AboutUS" element={<AboutUs />}></Route>
-          <Route
-            path="/cart"
-            element={
-              <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-            }
-          />
-          <Route
-            path="/Payment"
-            element={
-              <Payment
-                cart={cart}
-                setCart={setCart}
-                handleChange={handleChange}
-              />
-            }
-          />
+          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />}/>
+          <Route path="/Payment" element={<Payment cart={cart} setCart={setCart} handleChange={handleChange} />}/>
         </Routes>
       </div>
     </>

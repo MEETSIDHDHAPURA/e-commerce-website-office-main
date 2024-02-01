@@ -32,12 +32,12 @@ const Footer = () => {
         </div>
         <div className="md:py-20 lg:py-0">
             <h6 className="font-bold underline underline-offset-4">Subscribe to Our Email</h6>
-            <h1 className="font-semibold xl:text-2xl xl:pt-5">For Latest News & Updates</h1>
+            <h1 className="font-semibold xl:text-xl xl:pt-5">For Latest News & Updates</h1>
         </div>
     </div>
     </div>
     <div className="dark:bg-gray-200 text-white py-3 bg-gray-800 dark:text-black text-center xxs:hidden sm:block">
-        All RIGHTS GIVEN BY DEMAZE TECHNOLOGES. 
+        All RIGHTS GIVEN BY <span className="font-bold text-red-600"> PHELOX </span> TECHNOLOGES. 
     </div>
     </>
   )

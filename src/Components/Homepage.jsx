@@ -22,7 +22,7 @@ const Homepage = () => {
             <h1 className="text-black sm:mx-0 md:text-8xl lg:text-[8rem] sm:text-white xl:text-[12rem] font-bold xl:py-5 ">
               HEADPHONE <br />
             </h1>
-            <button className="bg-black text-white px-3 py-2 text-sm md:py-3 rounded-full hover:bg-[#ffffffbe] hover:text-black md:mr-[32rem] sm:mt-14 lg:mr-[43rem] xl:mr-[65rem] xl:px-10">
+            <button className="bg-black text-white px-3 py-2 text-sm md:py-3 rounded-full hover:bg-[#ffffffbe] hover:text-black md:mr-[32rem] sm:mt-14 lg:mr-[43rem] xl:mr-[65rem] xl:px-10 hover:duration-500">
               Browse
             </button>
           </div>
@@ -44,7 +44,7 @@ const Homepage = () => {
               <h4 className="text-lg md:text-4xl text-[#fbf9f159] font-bold xl:text-5xl xl:tracking-wide">
                 Earphone
               </h4>
-              <button className="hidden sm:block md:my-5 md:py-1 lg:my-5 lg:py-1 px-5 bg-gray-950 text-white xl:py-2 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black">
+              <button className="hidden sm:block md:my-5 md:py-1 lg:my-5 lg:py-1 px-5 bg-gray-950 text-white xl:py-2 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black hover:duration-500">
                 Browse
               </button>
               <div>
@@ -63,7 +63,7 @@ const Homepage = () => {
               <h4 className="text-lg md:text-4xl text-[#fcfcfc6f] font-bold xl:text-5xl xl:tracking-wide">
                 WATCH
               </h4>
-              <button className="hidden sm:block md:my-5 md:py-1 lg:my-5 lg:py-1 px-5 bg-gray-950 text-white xl:py-2 xl:px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black">
+              <button className="hidden sm:block md:my-5 md:py-1 lg:my-5 lg:py-1 px-5 bg-gray-950 text-white xl:py-2 xl:px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black hover:duration-500">
                 Browse
               </button>
               <div>
@@ -84,7 +84,7 @@ const Homepage = () => {
               <h4 className="text-lg md:text-5xl text-[#ffffff7b] font-bold xl:text-7xl xl:tracking-wider">
                 Laptop
               </h4>
-              <button className=" hidden sm:block md:my-5 md:px-5 bg-gray-950 text-white xl:py-2 xl:px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black">
+              <button className=" hidden sm:block md:my-5 md:px-5 bg-gray-950 text-white xl:py-2 xl:px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black hover:duration-500">
                 Browse
               </button>
               <div>
@@ -109,7 +109,7 @@ const Homepage = () => {
               <h2 className="overflow-hidden text-black md:text-5xl sm:text-[#ffffffef] font-bold xl:text-7xl tracking-wide">
                 CONSOLE
               </h2>
-              <button className="hidden sm:block md:my-5 md:py-1 bg-gray-950 text-white xl:py-2 px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black">
+              <button className="hidden sm:block md:my-5 md:py-1 bg-gray-950 text-white xl:py-2 px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black hover:duration-500">
                 Browse
               </button>
               <div>
@@ -130,7 +130,7 @@ const Homepage = () => {
               <h2 className="md:text-5xl text-[#fcfcfc63] font-bold xl:text-5xl tracking-wide">
                 OCULUS
               </h2>
-              <button className="hidden sm:block  md:my-5 md:py-1 bg-gray-950 text-white xl:py-2 px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black">
+              <button className="hidden sm:block  md:my-5 md:py-1 bg-gray-950 text-white xl:py-2 px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black hover:duration-500">
                 Browse
               </button>
               <div>
@@ -151,7 +151,7 @@ const Homepage = () => {
               <h2 className="md:text-5xl text-[#fcfcfc63] font-bold xl:text-5xl xl:tracking-wide">
                 SPEAKER
               </h2>
-              <button className="hidden sm:block md:my-5 md:py-1 bg-gray-950 text-white xl:py-2 px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black">
+              <button className="hidden sm:block md:my-5 md:py-1 bg-gray-950 text-white xl:py-2 px-5 xl:my-5 rounded-full hover:bg-[#ffffff77] hover:text-black hover:duration-500">
                 Browse
               </button>
               <div>
