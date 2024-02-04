@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import computer from "../assets/computer.jpg"
 import logo from "../assets/logo.png"
 
 const Login = () => {
+
+  const [password , setPassword] = useState(true) 
+
+  const handleClick = () => {
+    setPassword(!password)
+  }
+
   return (
     <div className="Login-color">
       <div className="xl:h-[100%] bg-cover grid ">
@@ -32,15 +39,25 @@ const Login = () => {
                   type="text"
                   className="pr-16 pl-3 rounded border text-xs py-1 xs:pr-28 md:pr-32 sm:pr-36 lg:py-2 lg:pr-48 xl:pr-52 xl:text-sm my-1"
                   placeholder="Enter your Username"
-                ></input>
+                   
+                > </input>
+                
                 <h1 className="text-xs pt-2 font-bold xl:text-sm lg:text-[15px] xl:mt-1">
                 <i class="fa-solid fa-lock mx-1">&nbsp;</i> PASSWORD 
                 </h1>
+                <div className="flex">
                 <input
-                  type="text"
+                  type={password ? "password" : 'text'}
                   className="pr-16 pl-3 rounded border text-xs py-1 xs:pr-28 md:pr-32 sm:pr-36 lg:py-2 lg:pr-48 xl:pr-52 xl:text-sm my-1"
                   placeholder="Enter your Password"
                 ></input>
+                  <div className="inline-block">
+                  { password ?(
+                <i onClick={handleClick} class="fa-solid fa-eye relative -bottom-3 right-[2rem] cursor-pointer"></i>) : (
+                <i onClick={handleClick} class="fa-sharp fa-solid fa-eye-slash -bottom-3 relative right-[2rem] cursor-pointer"></i>
+                )}
+                  </div>
+                </div>
               </div>
               <a href="/Home"><button className="px-3 ml-[70%] my-3 text-xs py-1 bg-[#000000e7] text-white rounded-xl lg:px-5 lg:ml-[73%] lg:my-5 xl:py-2 xl:px-7 xl:rounded-full hover:bg-gray-800 hover:duration-500">Login
               </button></a>

@@ -37,7 +37,7 @@ const Footer = () => {
     </div>
     </div>
     <div className="dark:bg-gray-200 text-white py-3 bg-gray-800 dark:text-black text-center xxs:hidden sm:block">
-        All RIGHTS GIVEN BY <span className="font-bold text-red-600"> PHELOX </span> TECHNOLOGES. 
+        All RIGHTS GIVEN BY <span className="font-bold text-[#31899f]"> PHELOX </span> TECHNOLOGES. 
     </div>
     </>
   )

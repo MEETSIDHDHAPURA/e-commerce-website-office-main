@@ -2,7 +2,7 @@ import React from "react";
 import computer from "../assets/computer.jpg";
 import logo from "../assets/logo.png";
 
-const Login = () => {
+const Registration = () => {
   return (
     <div className="Login-color">
       <div className="h-[100%] bg-cover grid">
@@ -94,4 +94,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Registration;
