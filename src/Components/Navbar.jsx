@@ -21,10 +21,10 @@ export default function App({ size }) {
     <>
       <div className="dark:bg-gray-950 dark:text-white bg-white text-black ">
         <div className="py-5 px-5 xxs:px-10 md:px-0 md:ml-5 xl:py-0 h-24 xl:text-lg flex">
-          <Link to="/Home" className="text-xl mt-5 lg:mt-8 lg:mx-8 text-cyan-600 xl:mx-8 font-bold tracking-widest xl:text-2xl h-9 flex"><img alt="logo" src={logo} className="size-5 mt-1"></img>
+          <Link to="/Home" className="text-xl mt-5 lg:mt-9 lg:mx-8 text-cyan-600 xl:mx-8 font-bold tracking-widest xl:text-2xl h-9 flex"><img alt="logo" src={logo} className="size-5 mt-[6px]"></img>
             &nbsp;PHLOX
           </Link>
-          <div className="hidden md:pt-5 md:pl-5 md:gap-5 md:flex lg:gap-8 lg:mt-4">
+          <div className="hidden md:pt-5 md:pl-5 md:gap-5 md:flex lg:gap-8 lg:mt-5">
             <Link
               to="/Home"
               className="lg:font-bold hover:underline h-8 underline-offset-2 cursor-pointer">
@@ -55,11 +55,11 @@ export default function App({ size }) {
               Contact Us
             </Link>
           </div>
-          <Link to="/" className="font-bold inline ml-8 h-8 text-xs py-6 px-2 xs:ml-32 sm:ml-72 md:ml-14 md:py-0 md:my-5 lg:mt-8 lg:ml-44 xl:ml-[29rem] xl:mx-3 xl:mt-9 hover:underline hover:underline-offset-2 cursor-pointer sm:text-lg">
+          <Link to="/" className="font-bold inline ml-8 h-8 text-xs py-6 px-2 xs:ml-32 sm:ml-72 md:ml-14 md:py-0 md:my-5 lg:mt-8 lg:ml-44 xl:ml-[29rem] xl:mx-3 xl:mt-10 hover:underline hover:underline-offset-2 cursor-pointer sm:text-lg">
             Login
           </Link>
           <button>
-            <i className="fa-solid fa-magnifying-glass px-2 text-sm py-6 sm:text-lg xl:my-4 lg:my-2 "></i>
+          <i className="fa-regular fa-heart px-2 text-sm py-6 sm:text-lg xl:my-4 lg:my-2 "></i>
           </button>
           <Link to="/cart" className="relative" >
             <i className="fa-sharp fa-solid fa-cart-shopping my-6 text-sm px-2 xl:my-10 xl:mx-5 lg:my-8 sm:text-lg cursor-pointer hover:scale-110 hover:duration-300"></i>

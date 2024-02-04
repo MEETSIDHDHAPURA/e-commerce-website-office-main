@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import computer from "../assets/computer.jpg";
 import logo from "../assets/logo.png";
 
 const Registration = () => {
+
+  const [password, setPassword] = useState(true);
+
+  const handleClick = () => {
+    setPassword(!password);
+  };
+
   return (
     <div className="Login-color">
       <div className="h-[100%] bg-cover grid">
@@ -72,14 +79,29 @@ const Registration = () => {
                   className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm"
                   placeholder="Enter your Email"
                 ></input>
+                <div>
                 <h1 className="pt-2 font-bold lg:text-[15px] xl:mt-1">
                   <i class="fa-solid fa-lock mx-1">&nbsp;</i> PASSWORD
                 </h1>
                 <input
-                  type="text"
+                  type={password ? 'password' : 'text' }
                   className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm my-1"
                   placeholder="Enter your Password"
                 ></input>
+                <div className="inline-block">
+                    {password ? (
+                      <i
+                        onClick={handleClick}
+                        class="fa-solid fa-eye relative right-[2rem] cursor-pointer"
+                      ></i>
+                    ) : (
+                      <i
+                        onClick={handleClick}
+                        class="fa-sharp fa-solid fa-eye-slash relative right-[2.05rem] cursor-pointer"
+                      ></i>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
             <a href="/">

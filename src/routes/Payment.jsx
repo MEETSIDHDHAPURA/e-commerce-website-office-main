@@ -8,14 +8,8 @@ import mobikwik from "../assets/mobikwik.png";
 import Navbar from "../Components/Navbar";
 import Swal from "sweetalert2";
 
-const Payment = ({ cart, setCart }) => {
+const Payment = ({ cart}) => {
   const [price, setPrice] = useState(0);
-  const [email, setEmail] = useState("");
-  const [zipCode, setZipCode] = useState("");
-  const [cvv, setCvv] = useState("");
-  const [emailValid, setEmailValid] = useState(true);
-  const [zipCodeValid, setZipCodeValid] = useState(true);
-  const [cvvValid, setCvvValid] = useState(true);
 
   const handlePrice = () => {
     let ans = 0;
@@ -31,21 +25,6 @@ const Payment = ({ cart, setCart }) => {
   useEffect(() => {
     handlePrice();
   });
-
-  const validateEmail = () => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    setEmailValid(emailRegex.test(email));
-  };
-
-  const validateZipCode = () => {
-    const zipCodePattern = /^\d{6}$/;
-    setZipCodeValid(zipCodePattern.test(zipCode));
-  };
-
-  const validateCvv = () => {
-    const CvvPattern = /^\d{3}$/;
-    setCvvValid(CvvPattern.test(CvvPattern));
-  };
 
   const handleClick = () => {
     Swal.fire({
@@ -84,12 +63,7 @@ const Payment = ({ cart, setCart }) => {
               <input
                 type="text"
                 placeholder="E-mail"
-                className={`text-black my-2 rounded ${
-                  emailValid ? "" : "border-red-500"
-                }`}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onBlur={validateEmail}
+                className="text-black my-2 rounded" 
               />
               <br />
               <label>Zip Code</label>
@@ -97,12 +71,7 @@ const Payment = ({ cart, setCart }) => {
               <input
                 type="text"
                 placeholder="Zip Code"
-                className={`text-black my-2 rounded ${
-                  zipCodeValid ? "" : "border-red-500"
-                }`}
-                value={zipCode}
-                onChange={(e) => setZipCode(e.target.value)}
-                onBlur={validateZipCode}
+                className="text-black my-2 rounded"
               />
               <br />
             </div>
@@ -225,12 +194,7 @@ const Payment = ({ cart, setCart }) => {
                   <input
                     type="text"
                     placeholder="CVV"
-                    className={`text-white bg-black ml-5 ${
-                      cvvValid ? "" : "border-red-500"
-                    }`}
-                    value={cvv}
-                    onChange={(e) => setCvv(e.target.value)}
-                    onBlur={validateCvv}
+                    className="text-white bg-black ml-5"
                   ></input>
                 </div>
               </div>
