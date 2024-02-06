@@ -24,7 +24,7 @@ const Login = () => {
                 &nbsp; PHELOX
               </h1>
             </div>
-            <div>
+            <form action="/Home">
               <h1 className="text-xl px-4 pt-3 xs:px-10 xs:pt-0 md:text-2xl lg:text-3xl font-bold xl:text-4xl tracking-wider xl:pt-2">
                 Get Started
               </h1>
@@ -40,60 +40,61 @@ const Login = () => {
                 </h1>
                 <input
                   type="text"
-                  className="pr-16 pl-3 rounded border text-xs py-1 xs:pr-28 md:pr-32 sm:pr-36 lg:py-2 lg:pr-48 xl:pr-52 xl:text-sm my-1"
+                  className="w-52 pl-3 rounded border text-xs py-1 xxs:w-60 xs:w-64 md:w-72 sm:w-80 lg:py-2 lg:w-80 xl:w-96 xl:text-sm my-1"
                   placeholder="Enter your Name"
+                  required
                 ></input>
                 <h1 className="text-xs pt-2 font-bold xl:text-sm lg:text-[15px] xl:mt-1 ">
-                  <i className="fa-solid fa-envelope mx-1">&nbsp;</i> USERNAME
+                  <i className="fa-solid fa-envelope mx-1">&nbsp;</i> Email
                 </h1>
                 <input
-                  type="text"
-                  className="pr-16 pl-3 rounded border text-xs py-1 xs:pr-28 md:pr-32 sm:pr-36 lg:py-2 lg:pr-48 xl:pr-52 xl:text-sm my-1"
-                  placeholder="Enter your Username"
-                >
-                </input>
-
+                  type="email"
+                  className="w-52 pl-3 rounded border text-xs py-1 xxs:w-60 xs:w-64 md:w-72 sm:w-80 lg:py-2 lg:w-80 xl:w-96 xl:text-sm my-1"
+                  placeholder="Enter your Email"
+                  required
+                ></input>
                 <h1 className="text-xs pt-2 font-bold xl:text-sm lg:text-[15px] xl:mt-1">
                   <i class="fa-solid fa-lock mx-1">&nbsp;</i> PASSWORD
                 </h1>
                 <div className="flex">
                   <input
                     type={password ? "password" : "text"}
-                    className="pr-16 pl-3 rounded border text-xs py-1 xs:pr-28 md:pr-32 sm:pr-36 lg:py-2 lg:pr-48 xl:pr-52 xl:text-sm  my-1"
+                    className="w-52 pl-3 rounded border text-xs xxs:w-60 py-1 xs:w-64 md:w-72 sm:w-80 lg:py-2 lg:w-80 xl:w-96 xl:text-sm  my-1"
                     placeholder="Enter your Password"
+                    required
                   ></input>
                   <div className="inline-block">
                     {password ? (
                       <i
                         onClick={handleClick}
-                        class="fa-solid fa-eye relative -bottom-3 right-[2rem] cursor-pointer"
+                        className="fa-solid fa-eye relative xl:-bottom-3 xl:right-[2rem] cursor-pointer top-1 right-6 lg:top-2 lg:right-7"
                       ></i>
                     ) : (
                       <i
                         onClick={handleClick}
-                        class="fa-sharp fa-solid fa-eye-slash -bottom-3 relative right-[2.05rem] cursor-pointer"
+                        className="fa-sharp fa-solid fa-eye-slash xl:-bottom-3 relative xl:right-[2.05rem] cursor-pointer top-1 right-6 lg:top-2 lg:right-7"
                       ></i>
                     )}
                   </div>
                 </div>
               </div>
-              <a href="/Home">
-                <button className="px-3 ml-[70%] my-3 text-xs py-1 bg-[#000000e7] text-white rounded-xl lg:px-5 lg:ml-[73%] lg:my-5 xl:py-2 xl:px-7 xl:rounded-full hover:bg-gray-800 hover:duration-500">
-                  Login
-                </button>
-              </a>
-
+              <button
+                type="submit"
+                className="px-3 ml-[70%] my-3 text-xs py-1 bg-[#000000e7] text-white rounded-xl lg:px-5 lg:ml-[73%] lg:my-5 xl:py-2 xl:px-7 xl:rounded-full hover:bg-gray-800 hover:duration-500"
+              >
+                Login
+              </button>
               <h1 className="text-xs px-5 pt-3 pb-5 lg:my-2 xs:px-10 xl:px-11 xl:text-sm">
-                By signing up, i agree to the{" "}
+                By signing up, i agree to the
                 <span className="underline decoration-1 underline-offset-2">
                   Term of service
-                </span>{" "}
-                and{" "}
+                </span>
+                and
                 <p className="underline decoration-1 underline-offset-2 inline">
                   Privacy policy
                 </p>
               </h1>
-            </div>
+            </form>
           </div>
           <div className="my-12 md:mr-8 xl:mr-16 xl:px-5 border-2 rounded-3xl hidden md:block">
             <img

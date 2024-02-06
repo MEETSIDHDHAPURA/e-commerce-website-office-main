@@ -55,3 +55,27 @@
         transform: translatey(0%);
     }
 }
+@media (min-width: 320px) {
+    .Aboutimg{
+        height: 15rem;
+        margin: auto;
+    }
+    .Aboutdata{
+        margin: 0px;
+    }
+}
+@media (min-width: 425px) {
+    .Aboutimg{
+        height: 18rem;
+        margin: auto;
+    }
+}@media (min-width: 640px) {
+    .Aboutimg{
+        height: 25rem;
+        margin: auto;
+    }
+}@media (min-width: 768px) {
+    .Aboutimg{
+        height: 23rem;
+    }
+}

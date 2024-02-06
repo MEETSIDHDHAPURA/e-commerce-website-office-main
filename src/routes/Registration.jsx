@@ -21,7 +21,7 @@ const Registration = () => {
               className="md:mt-10 xl:mt-20 w-[110%] h-[80%]"
             ></img>
           </div>
-          <div className="md:mr-5 lg:mr-10 xl:mr-24">
+          <from action="/" className="md:mr-5 lg:mr-10 xl:mr-24">
             <div className="flex mx-4 my-4 md:mt-8 md:mb-2">
               <img
                 alt="logo"
@@ -44,10 +44,11 @@ const Registration = () => {
                 </h1>
                 <input
                   type="text"
-                  className="pr-16 xl:pl-3 rounded border text-xs py-1 xxs:pr-28 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm xl:my-1"
+                  className="pr-16 xl:pl-3 rounded border text-xs py-1 xxs:pr-28 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:w-[25.3rem] xl:text-sm xl:my-1"
                   placeholder="Enter your Full Name"
+                  required
                 ></input>
-                <div className="lg:flex">
+                <div className="lg:flex text-sm">
                   <div className="mt-2">
                     <h1 className="font-bold">
                       <i className="fa-solid fa-phone mx-1">&nbsp;</i>Phone No.
@@ -56,15 +57,15 @@ const Registration = () => {
                       type="text"
                       placeholder="Phone no."
                       className="py-1 mt-1 xxs:pr-[6.5rem] xs:pr-36 xs:px-2 xs:my-1 md:pr-28 lg:py-2 border rounded-md px-2 pr-14"
+                      required
                     ></input>
                   </div>
                   <div className="lg:mt-2 lg:mx-2 xl:mt-2 xl:ml-7">
                     <h1 className=" my-[2px] mx-1 font-bold">Gender</h1>
                     <select
-                      id="cars"
-                      name="cars"
-                      className="border rounded-md py-[5px] lg:py-[7px] pr-5 pl-2"
-                    >
+                      id="gender"
+                      name="gender"
+                      className="border rounded-md py-[5px] lg:py-[7px] pr-5 pl-2">
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                       <option value="Other">Other</option>
@@ -77,39 +78,39 @@ const Registration = () => {
                 <input
                   type="text"
                   className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm"
-                  placeholder="Enter your Email"
+                  placeholder="name@gamil.com"
+                  required
                 ></input>
                 <div>
                 <h1 className="pt-2 font-bold lg:text-[15px] xl:mt-1">
-                  <i class="fa-solid fa-lock mx-1">&nbsp;</i> PASSWORD
+                  <i className="fa-solid fa-lock mx-1">&nbsp;</i> PASSWORD
                 </h1>
                 <input
                   type={password ? 'password' : 'text' }
                   className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm my-1"
                   placeholder="Enter your Password"
+                  required
                 ></input>
                 <div className="inline-block">
                     {password ? (
                       <i
                         onClick={handleClick}
-                        class="fa-solid fa-eye relative right-[2rem] cursor-pointer"
+                        className="fa-solid fa-eye relative right-[2rem] cursor-pointer"
                       ></i>
                     ) : (
                       <i
                         onClick={handleClick}
-                        class="fa-sharp fa-solid fa-eye-slash relative right-[2.05rem] cursor-pointer"
+                        className="fa-sharp fa-solid fa-eye-slash relative right-[2.05rem] cursor-pointer"
                       ></i>
                     )}
                   </div>
                 </div>
               </div>
             </div>
-            <a href="/">
-              <button className="text-xs ml-[62%] my-3 px-3 py-1 mb-5 bg-[#000000e7] text-white rounded-2xl md:ml-[70%] xl:ml-[5%] md:mt-2 xl:px-[10.1rem] lg:ml-[73%] lg:text-sm xl:py-2 xl:mt-3 xl:mb-7 hover:bg-gray-800 hover:duration-500">
+              <button type="submit" className="text-xs ml-[62%] my-3 px-3 py-1 mb-5 bg-[#000000e7] text-white rounded-2xl md:ml-[70%] xl:ml-[5%] md:mt-2 xl:px-[10.1rem] lg:ml-[73%] lg:text-sm xl:py-2 xl:mt-3 xl:mb-7 hover:bg-gray-800 hover:duration-500">
                 Sign Up
               </button>
-            </a>
-          </div>
+          </from>
         </div>
       </div>
     </div>
