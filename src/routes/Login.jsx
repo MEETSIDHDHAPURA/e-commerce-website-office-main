@@ -84,14 +84,18 @@ const Login = () => {
               >
                 Login
               </button>
+              <div className="flex">
+                <h1>are you</h1>
+              </div>
               <h1 className="text-xs px-5 pt-3 pb-5 lg:my-2 xs:px-10 xl:px-11 xl:text-sm">
-                By signing up, i agree to the
+                By signing up, i agree to the &nbsp;
                 <span className="underline decoration-1 underline-offset-2">
                   Term of service
                 </span>
-                and
+                &nbsp;
+                and &nbsp;
                 <p className="underline decoration-1 underline-offset-2 inline">
-                  Privacy policy
+                   Privacy policy
                 </p>
               </h1>
             </form>

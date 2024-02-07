@@ -64,6 +64,7 @@ export const productDatabase = [
     discount: "20% OFF",
     amount: 1,
     category: "headphone",
+    url1 : ""
   },
   {
     id: "11",

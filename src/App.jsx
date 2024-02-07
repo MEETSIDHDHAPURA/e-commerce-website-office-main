@@ -11,6 +11,7 @@ import AboutUs from "./Components/AboutUs";
 import Admin from "./Admin/Admin";
 import Allproducts from "./Admin/Allproduct";
 import FirstPage  from "./Components/Firstpage"
+import Detail from "./Components/Detail";
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/Registration" element={<Registration/>}></Route>
           <Route path="/Admin" element={<Admin/>} ></Route>
           <Route path="/Allproduct" element={<Allproducts/>} ></Route>
+          <Route path="/Detail" element={<Detail/>} ></Route>
           <Route path="/Product" element={<Product addToCart={addToCart} />}></Route>
           <Route path="/Home" element={<Home cart={cart} setCart={setCart} />}  />
           <Route path="/ContactUs" element={<ContactUs />}></Route>
