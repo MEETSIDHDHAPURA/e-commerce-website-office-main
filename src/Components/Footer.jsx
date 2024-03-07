@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
     <div className="sm:flex hidden sm:block md:p-12 md:gap-9 xl:gap-28 md:pt-20 bg-gray-200 xl:p-20 dark:text-white dark:bg-gray-950 dark:border" >
         <div className="md:w-72 xl:w-96">
-            <h2 className="md:text-xl md:pb-3 text-red-500 tracking-widest font-bold xl:text-xl xl:pb-5">PHLOX</h2>
+            <h2 className="md:text-xl md:pb-3 text-cyan-600 tracking-widest font-bold xl:text-xl xl:pb-5">PHLOX</h2>
             <p className="md:pb-3 xl:pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repellat, architecto explicabo numquam sapiente soluta iusto dicta officiis, eum et repudiandae voluptatem, incidunt ratione!</p>
             <div className="flex gap-5 ">
             <i className="fa-sharp fa-solid fa-envelope"></i>

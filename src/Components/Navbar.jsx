@@ -91,20 +91,25 @@ export default function App({ size }) {
             ></img>
             <div className="dark:text-black absolute right-10 bg-white border-2 shadow-md my-1 opacity-0 group-hover:opacity-100 hover:duration-1000 rounded-lg px-10 py-7">
               <ul>
+                <li className="my-3 hover:underline hover:underline-offset-3">
+                  <Link to="/Admin">Admin</Link>
+                </li>
                 <li className="mt-3">
-                  <Link to="/" className="text-lg font-bold ">
+                  <Link to="/" className="text-lg  hover:underline hover:underline-offset-3 ">
                     Login
                   </Link>
                 </li>
-                <li className="mt-3">
+                <li className="mt-3 hover:underline hover:underline-offset-3">
                   <Link to="/Registration">Registration</Link>
                 </li>
-                <li className="my-3">
-                  <Link to="/Admin">Admin</Link>
+                <li className="mt-3">
+                  <Link to="/" className="text-lg hover:underline hover:underline-offset-3 ">
+                    Profile
+                  </Link>
                 </li>
                 <hr />
                 <hr />
-                <li className="mt-3">
+                <li className="mt-3 hover:underline hover:underline-offset-3">
                   <Link to="/">Logout</Link>
                 </li>
               </ul>

@@ -13,7 +13,7 @@ const Registration = () => {
   return (
     <div className="Login-color">
       <div className="h-[100%] bg-cover grid">
-        <div className="flex justify-between my-[31%] xxs:my-[27%] xs:my-[20.5%] md:my-[11.4%] lg:my-[9.18%] mx-10 bg-[#fff] rounded-[2rem] xl:my-[5.45%] xl:mx-36 shadow-2xl">
+        <div className="flex justify-between my-[31%] xxs:my-[27%] xs:my-[20.5%] md:my-[11.4%] lg:my-[9.18%] mx-10 bg-[#fff] rounded-[2rem] xl:my-[5.5%] xl:mx-36 shadow-2xl">
           <div className="md:my-8 md:mx-8 xl:my-11 xl:ml-16 border-2 rounded-3xl hidden md:block">
             <img
               alt="img"
@@ -77,8 +77,8 @@ const Registration = () => {
                 </h1>
                 <input
                   type="text"
-                  className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm"
-                  placeholder="name@gamil.com"
+                  className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:w-[25.3rem] xl:text-sm"
+                  placeholder="Name@gamil.com"
                   required
                 ></input>
                 <div>
@@ -87,7 +87,7 @@ const Registration = () => {
                 </h1>
                 <input
                   type={password ? 'password' : 'text' }
-                  className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:pr-52 xl:text-sm my-1"
+                  className="pr-16 pl-3 rounded border text-xs py-1 xxs:pr-24 xs:pr-36 xs:px-2 xs:my-1 md:pr-28 sm:pr-36 lg:py-2 lg:pr-52 xl:w-[25.3rem] xl:text-sm my-1"
                   placeholder="Enter your Password"
                   required
                 ></input>
@@ -107,7 +107,7 @@ const Registration = () => {
                 </div>
               </div>
             </div>
-              <button type="submit" className="text-xs ml-[62%] my-3 px-3 py-1 mb-5 bg-[#000000e7] text-white rounded-2xl md:ml-[70%] xl:ml-[5%] md:mt-2 xl:px-[10.1rem] lg:ml-[73%] lg:text-sm xl:py-2 xl:mt-3 xl:mb-7 hover:bg-gray-800 hover:duration-500">
+              <button type="submit" className="text-xs ml-[62%] my-3 px-3 py-1 mb-5 bg-[#000000e7] text-white rounded-2xl md:ml-[70%] xl:ml-[5%] md:mt-2 xl:px-[10.8rem] lg:ml-[73%] lg:text-sm xl:py-2 xl:mt-3 xl:mb-7 hover:bg-gray-800 hover:duration-500">
                 Sign Up
               </button>
           </from>

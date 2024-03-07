@@ -12,8 +12,8 @@ const Login = () => {
   return (
     <div className="Login-color">
       <div className="xl:h-[100%] bg-cover grid ">
-        <div className="flex justify-between my-[35.9%] xxs:[] xs:my-[27%] md:my-[14.45%] lg:my-[7.3%] mx-10 bg-[#fff] rounded-[2rem] xl:my-[5.1%] xl:mx-36 shadow-2xl">
-          <div className="xl:mx-16 xl:my-5">
+        <div className="flex justify-between my-[35.9%] xxs:[] xs:my-[27%] md:my-[14.45%] lg:my-[7.3%] mx-10 bg-[#fff] rounded-[2rem] xl:my-[5.5%] xl:mx-36 shadow-2xl">
+          <div className="xl:mx-16 xl:my-4">
             <div className="flex px-5 py-2 xs:px-10 xs:py-4">
               <img
                 alt=""
@@ -80,14 +80,11 @@ const Login = () => {
               </div>
               <button
                 type="submit"
-                className="px-3 ml-[70%] my-3 text-xs py-1 bg-[#000000e7] text-white rounded-xl lg:px-5 lg:ml-[73%] lg:my-5 xl:py-2 xl:px-7 xl:rounded-full hover:bg-gray-800 hover:duration-500"
+                className="px-3 ml-[70%] my-3 text-xs py-1 bg-[#000000e7] text-white rounded-xl lg:px-5 lg:ml-[70%] lg:my-5 xl:py-2 xl:px-7 xl:rounded-full hover:bg-gray-800 hover:duration-500"
               >
                 Login
               </button>
-              <div className="flex">
-                <h1>are you</h1>
-              </div>
-              <h1 className="text-xs px-5 pt-3 pb-5 lg:my-2 xs:px-10 xl:px-11 xl:text-sm">
+              <h1 className="text-xs px-5 pb-5 lg:my-2 xs:px-10 xl:px-11 xl:text-sm">
                 By signing up, i agree to the &nbsp;
                 <span className="underline decoration-1 underline-offset-2">
                   Term of service

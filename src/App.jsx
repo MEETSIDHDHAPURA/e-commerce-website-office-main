@@ -8,10 +8,9 @@ import Registration from "./routes/Registration";
 import Product from "./Components/Product";
 import ContactUs from "./Components/ContactUs";
 import AboutUs from "./Components/AboutUs";
-import Admin from "./Admin/Admin";
 import Allproducts from "./Admin/Allproduct";
-import FirstPage  from "./Components/Firstpage"
 import Detail from "./Components/Detail";
+import Admin from "../src/Admin/Admin";
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -38,10 +37,9 @@ export default function App() {
     <>
       <div className="App dark:bg-gray-950">
         <Routes>
-        <Route path="/" element={<FirstPage/>}></Route>
-          <Route path="/Login" element={<Login/>}></Route>
+          <Route path="/" element={<Login/>}></Route>
           <Route path="/Registration" element={<Registration/>}></Route>
-          <Route path="/Admin" element={<Admin/>} ></Route>
+          <Route path="/Admin" element={<Admin/>}></Route>
           <Route path="/Allproduct" element={<Allproducts/>} ></Route>
           <Route path="/Detail" element={<Detail/>} ></Route>
           <Route path="/Product" element={<Product addToCart={addToCart} />}></Route>
