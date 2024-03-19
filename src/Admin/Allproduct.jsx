@@ -77,7 +77,7 @@ const Allproduct = ({ formdata }) => {
           </TableBody>
         </Table>
       </TableContainer>
-      <TableContainer component={Paper}>
+      {/* <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableBody>
             {formdata.map((row) => (
@@ -96,7 +96,7 @@ const Allproduct = ({ formdata }) => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </TableContainer> */}
       <Footer />
     </div>
   );

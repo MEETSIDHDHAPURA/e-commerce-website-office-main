@@ -31,6 +31,11 @@ const AdminNavbar = () => {
         </div>
       </div>
       <div className="bg-orange-100 flex justify-center py-5">
+        <Link to="/Dashbord">
+          <div className="mx-3 rounded hover:bg-gray-950 hover:duration-700 hover:text-white px-2 py-1">
+            Dashbord
+          </div>
+        </Link>
         <Link to="/Admin">
           <div className="mx-3 rounded hover:bg-gray-950 hover:duration-700 hover:text-white px-2 py-1">
             Add Products

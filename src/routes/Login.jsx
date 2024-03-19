@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import computer from "../assets/computer.jpg";
 import logo from "../assets/logo.png";
+// import * as React from 'react';
+// import Box from '@mui/material/Box';
+import TextField from "@mui/material/TextField";
 
 const Login = () => {
-  const [password, setPassword] = useState(true);
-
-  const handleClick = () => {
-    setPassword(!password);
-  };
-
   return (
     <div className="Login-color">
       <div className="xl:h-[100%] bg-cover grid ">
@@ -34,49 +31,25 @@ const Login = () => {
                   <h1 className="underline font-bold">Sign Up</h1>
                 </a>
               </h1>
-              <div className="px-3 pt-2 xs:px-9 lg:pt-5 xl:pt-0 xl:px-10">
-                <h1 className="text-xs xl:pt-2 font-bold xl:text-sm xl:mt-5">
-                  <i className="fa-solid fa-user mx-1">&nbsp;</i> NAME
-                </h1>
-                <input
-                  type="text"
-                  className="w-52 pl-3 rounded border text-xs py-1 xxs:w-60 xs:w-64 md:w-72 sm:w-80 lg:py-2 lg:w-80 xl:w-96 xl:text-sm my-1"
-                  placeholder="Enter your Name"
-                  required
-                ></input>
-                <h1 className="text-xs pt-2 font-bold xl:text-sm lg:text-[15px] xl:mt-1 ">
-                  <i className="fa-solid fa-envelope mx-1">&nbsp;</i> Email
-                </h1>
-                <input
-                  type="email"
-                  className="w-52 pl-3 rounded border text-xs py-1 xxs:w-60 xs:w-64 md:w-72 sm:w-80 lg:py-2 lg:w-80 xl:w-96 xl:text-sm my-1"
-                  placeholder="Enter your Email"
-                  required
-                ></input>
-                <h1 className="text-xs pt-2 font-bold xl:text-sm lg:text-[15px] xl:mt-1">
-                  <i class="fa-solid fa-lock mx-1">&nbsp;</i> PASSWORD
-                </h1>
-                <div className="flex">
-                  <input
-                    type={password ? "password" : "text"}
-                    className="w-52 pl-3 rounded border text-xs xxs:w-60 py-1 xs:w-64 md:w-72 sm:w-80 lg:py-2 lg:w-80 xl:w-96 xl:text-sm  my-1"
-                    placeholder="Enter your Password"
-                    required
-                  ></input>
-                  <div className="inline-block">
-                    {password ? (
-                      <i
-                        onClick={handleClick}
-                        className="fa-solid fa-eye relative xl:-bottom-3 xl:right-[2rem] cursor-pointer top-1 right-6 lg:top-2 lg:right-7"
-                      ></i>
-                    ) : (
-                      <i
-                        onClick={handleClick}
-                        className="fa-sharp fa-solid fa-eye-slash xl:-bottom-3 relative xl:right-[2.05rem] cursor-pointer top-1 right-6 lg:top-2 lg:right-7"
-                      ></i>
-                    )}
-                  </div>
-                </div>
+              <div className=" px-3 grid grid-cols-1 gap-5 pt-2 xs:px-9 lg:pt-5 xl:pt-0 xl:mt-8 xl:px-10">
+                  <TextField
+                    id="outlined-basic"
+                    size="small"
+                    label="Username"
+                    variant="outlined"
+                  />
+                  <TextField
+                    id="outlined-basic"
+                    size="small"
+                    label="Email Address"
+                    variant="outlined"
+                  />
+                  <TextField
+                    id="outlined-basic"
+                    size="small"
+                    label="Password"
+                    variant="outlined"
+                  />
               </div>
               <button
                 type="submit"
@@ -89,10 +62,9 @@ const Login = () => {
                 <span className="underline decoration-1 underline-offset-2">
                   Term of service
                 </span>
-                &nbsp;
-                and &nbsp;
+                &nbsp; and &nbsp;
                 <p className="underline decoration-1 underline-offset-2 inline">
-                   Privacy policy
+                  Privacy policy
                 </p>
               </h1>
             </form>

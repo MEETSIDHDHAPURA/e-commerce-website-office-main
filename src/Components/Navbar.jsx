@@ -51,7 +51,7 @@ export default function App({ size }) {
               Products
             </Link>
             <Link
-              to="/Home"
+              to="/Blogs"
               className="xl:hover:underline underline-offset-2 h-8 cursor-pointer"
             >
               Blogs

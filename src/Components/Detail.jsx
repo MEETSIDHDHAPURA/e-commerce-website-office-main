@@ -1,7 +1,10 @@
 import Navbar from "../Components/Navbar";
 import Samsungs23 from "../assets/Samsung s23.png";
 import Footer from "./Footer";
-import Faster from "./fast";
+import Return from "../assets/Return.png";
+import Cashback from "../assets/cashback.png";
+import cups from "../assets/cups.png";
+import carRetrun from "../assets/carRetrun.png";
 
 const Detail = () => {
   return (
@@ -67,20 +70,35 @@ const Detail = () => {
               Deal of the day
             </h1>
             <div className="flex gap-5">
-                <h1>discount</h1>
-                <h1>Price</h1>
+              <h1>discount</h1>
+              <h1>Price</h1>
             </div>
             <h1 className="">MRP </h1>
             <h1>Inclusive of all taxes</h1>
-            <h1 className="xl:mb-2">No Cost EMI available</h1>
-            <hr/>
-            <div>
-                
+            <h1 className="xl:mb-2 text-cyan-700 text-xs">No Cost EMI available.</h1>
+            <hr />
+            <div className="grid grid-cols-4 gap-2">
+              <div>
+                <img alt="" src={Return} className="size-10 my-2"></img>
+                <h1 className="text-xs text-blue-900 w-28">10 days Return & Exchange 10 days Return & Exchange</h1>
+              </div>
+              <div>
+                <img alt="" src={Cashback} className="size-10 my-2"></img>
+                <h1 className="text-xs text-blue-900">Pay on Delivery</h1>
+              </div>
+              <div>
+                <img alt="" src={carRetrun} className="size-10 my-2"></img>
+                <h1 className="text-xs text-blue-900">Free Delivery</h1>
+              </div>
+              <div>
+                <img alt="" src={cups} className="size-10 my-2"></img>
+                <h1 className="text-xs text-blue-900">Top Brands</h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };

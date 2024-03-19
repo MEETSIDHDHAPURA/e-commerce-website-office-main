@@ -10,20 +10,8 @@ import {
 } from "@mui/material";
 
 const Admin = ({ formdata }) => {
-  const [formData, setFormData] = useState(formdata);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-  };
 
-  const addNewProduct = () => {
-    // Implement your logic for adding a new product using formData
-    console.log(formData);
-  };
   return (
     <>
       <AdminNavbar />
@@ -42,8 +30,8 @@ const Admin = ({ formdata }) => {
               label="Product Name"
               variant="outlined"
               name="ProductName"
-              value={formData.ProductName}
-              onChange={handleInputChange}
+              // value={formData.ProductName}
+              // onChange={handleInputChange}
             />
             <TextField
               id="outlined-basic"
@@ -53,8 +41,8 @@ const Admin = ({ formdata }) => {
               variant="outlined"
               type="number"
               name="productPrice"
-              value={formdata.ProductPrice}
-              onChange={handleInputChange}
+              // value={formdata.ProductPrice}
+              // onChange={handleInputChange}
             />
             <TextField
               id="outlined-basic"
@@ -64,8 +52,8 @@ const Admin = ({ formdata }) => {
               variant="outlined"
               type="number"
               name="ProductDiscount"
-              value={formdata.ProductDiscount}
-              onChange={handleInputChange}
+              // value={formdata.ProductDiscount}
+              // onChange={handleInputChange}
             />
             <TextField
               id="outlined-basic"
@@ -75,16 +63,16 @@ const Admin = ({ formdata }) => {
               variant="outlined"
               type="number"
               name="DiscountedPrice"
-              value={formdata.DiscountedPrice}
-              onChange={handleInputChange}
+              // value={formdata.DiscountedPrice}
+              // onChange={handleInputChange}
             />
             <textarea
               placeholder="Product Description"
               className="border-2 rounded px-2 w-[30rem] py-1 mt-6"
               maxLength="200"
               name="ProductDescription"
-              value={formdata.ProductDescription}
-              onChange={handleInputChange}
+              // value={formdata.ProductDescription}
+              // onChange={handleInputChange}
             ></textarea>
             <FormControl sx={{ mt: "24px" }} size="small">
               <InputLabel id="demo-simple-select-label">Categories</InputLabel>
@@ -93,9 +81,9 @@ const Admin = ({ formdata }) => {
                 id="demo-simple-select"
                 sx={{ width: "20rem" }}
                 label="Categories"
-                onChange={handleInputChange}
-                name="Catrgories"
-                value={formdata.Catrgories}
+                // onChange={handleInputChange}
+                // name="Catrgories"
+                // value={formdata.Catrgories}
               >
                 <MenuItem value="Phone">Phone</MenuItem>
                 <MenuItem value="Laptop">Laptop</MenuItem>
@@ -111,8 +99,8 @@ const Admin = ({ formdata }) => {
               type="file"
               className="border-2 py-2 px-2 rounded w-80 mt-4"
               name="ImageUrl"
-              onChange={handleInputChange}
-              value={formdata.ImageUrl}
+              // onChange={handleInputChange}
+              // value={formdata.ImageUrl}
             ></input>
             <div className="my-5 mb-12">
               <button
